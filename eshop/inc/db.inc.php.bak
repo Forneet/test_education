@@ -1,0 +1,12 @@
+<?php
+header('Content-Type:text/html; charset=utf-8');
+define('BD_HOST','localhost');
+define('BD_LOGIN','root');
+define('BD_PASSWORD','');
+define('BD_NAME','eshop');
+define('ORDERS_LOG','oreders.log');
+/*Корзина покупателя*/
+$basket =array();
+/*Количество товаров в корзине покупателя*/
+$count =0;
+$link = mysqli_connect(DB_HOST, DB_LOGIN, DB_PASSWORD, DB_NAME) or die(mysqli_connect_error());
